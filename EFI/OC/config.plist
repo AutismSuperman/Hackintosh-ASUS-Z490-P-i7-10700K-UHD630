@@ -8,23 +8,7 @@
             <array>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-AWAC.aml</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-AWAC.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>SSDT-EC-USBX-DESKTOP.aml</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Path</key>
-                    <string>SSDT-EC-USBX-DESKTOP.aml</string>
-                </dict>
-                <dict>
-                    <key>Comment</key>
-                    <string>SSDT-GPRW.aml</string>
+                    <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -32,7 +16,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-PLUG-DRTNIA.aml</string>
+                    <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -40,7 +24,7 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-RHUB.aml</string>
+                    <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
@@ -48,11 +32,27 @@
                 </dict>
                 <dict>
                     <key>Comment</key>
-                    <string>SSDT-SBUS-MCHC.aml</string>
+                    <string></string>
                     <key>Enabled</key>
                     <true/>
                     <key>Path</key>
                     <string>SSDT-SBUS-MCHC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-AWAC.aml</string>
+                </dict>
+                <dict>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>Path</key>
+                    <string>SSDT-EC-USBX-DESKTOP.aml</string>
                 </dict>
             </array>
             <key>Delete</key>
@@ -94,13 +94,13 @@
                     <key>BaseSkip</key>
                     <integer>0</integer>
                     <key>Comment</key>
-                    <string>GPRW to XPRW</string>
+                    <string>Replace one byte sequence with another</string>
                     <key>Count</key>
                     <integer>0</integer>
                     <key>Enabled</key>
                     <false/>
                     <key>Find</key>
-                    <data>R1BSVwI=</data>
+                    <data>ESIzRA==</data>
                     <key>Limit</key>
                     <integer>0</integer>
                     <key>Mask</key>
@@ -108,7 +108,37 @@
                     <key>OemTableId</key>
                     <data></data>
                     <key>Replace</key>
-                    <data>WFBSVwI=</data>
+                    <data>RDMiEQ==</data>
+                    <key>ReplaceMask</key>
+                    <data></data>
+                    <key>Skip</key>
+                    <integer>0</integer>
+                    <key>TableLength</key>
+                    <integer>0</integer>
+                    <key>TableSignature</key>
+                    <data></data>
+                </dict>
+                <dict>
+                    <key>Base</key>
+                    <string>\_SB.PCI0.LPCB.HPET</string>
+                    <key>BaseSkip</key>
+                    <integer>0</integer>
+                    <key>Comment</key>
+                    <string>HPET _CRS to XCRS</string>
+                    <key>Count</key>
+                    <integer>1</integer>
+                    <key>Enabled</key>
+                    <false/>
+                    <key>Find</key>
+                    <data>X0NSUw==</data>
+                    <key>Limit</key>
+                    <integer>0</integer>
+                    <key>Mask</key>
+                    <data></data>
+                    <key>OemTableId</key>
+                    <data></data>
+                    <key>Replace</key>
+                    <data>WENSUw==</data>
                     <key>ReplaceMask</key>
                     <data></data>
                     <key>Skip</key>
@@ -200,7 +230,7 @@
                 <key>EnableSafeModeSlide</key>
                 <true/>
                 <key>EnableWriteUnprotector</key>
-                <false/>
+                <true/>
                 <key>ForceBooterSignature</key>
                 <false/>
                 <key>ForceExitBootServices</key>
@@ -301,7 +331,7 @@
             <array>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>Lilu.kext</string>
                     <key>Comment</key>
@@ -319,7 +349,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>VirtualSMC.kext</string>
                     <key>Comment</key>
@@ -337,25 +367,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>WhateverGreen.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/WhateverGreen</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>AppleALC.kext</string>
                     <key>Comment</key>
@@ -373,7 +385,25 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>WhateverGreen.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/WhateverGreen</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>SMCProcessor.kext</string>
                     <key>Comment</key>
@@ -391,7 +421,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>SMCSuperIO.kext</string>
                     <key>Comment</key>
@@ -409,7 +439,25 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>NVMeFix.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/NVMeFix</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>USBMap.kext</string>
                     <key>Comment</key>
@@ -427,7 +475,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>USBPower.kext</string>
                     <key>Comment</key>
@@ -445,7 +493,61 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothFirmware.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/IntelBluetoothFirmware</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>IntelBluetoothInjector.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string></string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
+                    <key>BundlePath</key>
+                    <string>AirportItlwm.kext</string>
+                    <key>Comment</key>
+                    <string></string>
+                    <key>Enabled</key>
+                    <true/>
+                    <key>ExecutablePath</key>
+                    <string>Contents/MacOS/AirportItlwm</string>
+                    <key>MaxKernel</key>
+                    <string></string>
+                    <key>MinKernel</key>
+                    <string></string>
+                    <key>PlistPath</key>
+                    <string>Contents/Info.plist</string>
+                </dict>
+                <dict>
+                    <key>Arch</key>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>LucyRTL8125Ethernet.kext</string>
                     <key>Comment</key>
@@ -463,7 +565,7 @@
                 </dict>
                 <dict>
                     <key>Arch</key>
-                    <string>Any</string>
+                    <string>x86_64</string>
                     <key>BundlePath</key>
                     <string>RealtekRTL8111.kext</string>
                     <key>Comment</key>
@@ -472,42 +574,6 @@
                     <true/>
                     <key>ExecutablePath</key>
                     <string>Contents/MacOS/RealtekRTL8111</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>CPUFriend.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/CPUFriend</string>
-                    <key>MaxKernel</key>
-                    <string></string>
-                    <key>MinKernel</key>
-                    <string></string>
-                    <key>PlistPath</key>
-                    <string>Contents/Info.plist</string>
-                </dict>
-                <dict>
-                    <key>Arch</key>
-                    <string>Any</string>
-                    <key>BundlePath</key>
-                    <string>NVMeFix.kext</string>
-                    <key>Comment</key>
-                    <string></string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>ExecutablePath</key>
-                    <string>Contents/MacOS/NVMeFix</string>
                     <key>MaxKernel</key>
                     <string></string>
                     <key>MinKernel</key>
@@ -795,7 +861,7 @@
                 <key>CustomSMBIOSGuid</key>
                 <false/>
                 <key>DisableIoMapper</key>
-                <true/>
+                <false/>
                 <key>DisableLinkeditJettison</key>
                 <true/>
                 <key>DisableRtcChecksum</key>
@@ -832,7 +898,7 @@
                 <key>FuzzyMatch</key>
                 <true/>
                 <key>KernelArch</key>
-                <string>x86_64</string>
+                <string>Auto</string>
                 <key>KernelCache</key>
                 <string>Auto</string>
             </dict>
@@ -949,195 +1015,15 @@
                     <key>Arguments</key>
                     <string></string>
                     <key>Auxiliary</key>
-                    <true/>
+                    <false/>
                     <key>Comment</key>
-                    <string>BootKicker.efi</string>
+                    <string>Not signed for security reasons</string>
                     <key>Enabled</key>
                     <false/>
                     <key>Flavour</key>
-                    <string>Auto</string>
+                    <string>OpenShell:UEFIShell:Shell</string>
                     <key>Name</key>
-                    <string>BootKicker.efi</string>
-                    <key>Path</key>
-                    <string>BootKicker.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>ChipTune.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>ChipTune.efi</string>
-                    <key>Path</key>
-                    <string>ChipTune.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>CleanNvram.efi</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>CleanNvram.efi</string>
-                    <key>Path</key>
-                    <string>CleanNvram.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>ControlMsrE2.efi</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>ControlMsrE2.efi</string>
-                    <key>Path</key>
-                    <string>ControlMsrE2.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>CsrUtil.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>CsrUtil.efi</string>
-                    <key>Path</key>
-                    <string>CsrUtil.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>GopStop.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>GopStop.efi</string>
-                    <key>Path</key>
-                    <string>GopStop.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>KeyTester.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>KeyTester.efi</string>
-                    <key>Path</key>
-                    <string>KeyTester.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>MmapDump.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>MmapDump.efi</string>
-                    <key>Path</key>
-                    <string>MmapDump.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>OpenControl.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>OpenControl.efi</string>
-                    <key>Path</key>
-                    <string>OpenControl.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>OpenShell.efi</string>
-                    <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>OpenShell.efi</string>
+                    <string>UEFI Shell</string>
                     <key>Path</key>
                     <string>OpenShell.efi</string>
                     <key>RealPath</key>
@@ -1151,55 +1037,35 @@
                     <key>Auxiliary</key>
                     <true/>
                     <key>Comment</key>
-                    <string>ResetSystem.efi</string>
+                    <string>Memory testing utility</string>
                     <key>Enabled</key>
-                    <true/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>ResetSystem.efi</string>
-                    <key>Path</key>
-                    <string>ResetSystem.efi</string>
-                    <key>RealPath</key>
                     <false/>
+                    <key>Flavour</key>
+                    <string>MemTest</string>
+                    <key>Name</key>
+                    <string>memtest86</string>
+                    <key>Path</key>
+                    <string>memtest86/BOOTX64.efi</string>
+                    <key>RealPath</key>
+                    <true/>
                     <key>TextMode</key>
                     <false/>
                 </dict>
                 <dict>
                     <key>Arguments</key>
-                    <string></string>
+                    <string>Shutdown</string>
                     <key>Auxiliary</key>
                     <true/>
                     <key>Comment</key>
-                    <string>RtcRw.efi</string>
+                    <string>Perform shutdown</string>
                     <key>Enabled</key>
                     <false/>
                     <key>Flavour</key>
                     <string>Auto</string>
                     <key>Name</key>
-                    <string>RtcRw.efi</string>
+                    <string>Shutdown</string>
                     <key>Path</key>
-                    <string>RtcRw.efi</string>
-                    <key>RealPath</key>
-                    <false/>
-                    <key>TextMode</key>
-                    <false/>
-                </dict>
-                <dict>
-                    <key>Arguments</key>
-                    <string></string>
-                    <key>Auxiliary</key>
-                    <true/>
-                    <key>Comment</key>
-                    <string>TpmInfo.efi</string>
-                    <key>Enabled</key>
-                    <false/>
-                    <key>Flavour</key>
-                    <string>Auto</string>
-                    <key>Name</key>
-                    <string>TpmInfo.efi</string>
-                    <key>Path</key>
-                    <string>TpmInfo.efi</string>
+                    <string>ResetSystem.efi</string>
                     <key>RealPath</key>
                     <false/>
                     <key>TextMode</key>
@@ -1230,7 +1096,7 @@
                     <key>SystemAudioVolume</key>
                     <data>Rg==</data>
                     <key>boot-args</key>
-                    <string>-v keepsyms=1 debug=0x100 igfxfw=2</string>
+                    <string>keepsyms=1  igfxfw=2</string>
                     <key>csr-active-config</key>
                     <data>AAAAAA==</data>
                     <key>prev-lang:kbd</key>
@@ -1354,6 +1220,8 @@
                 <string>Builtin</string>
                 <key>CustomDelays</key>
                 <false/>
+                <key>GraphicsInputMirroring</key>
+                <true/>
                 <key>KeyInitialDelay</key>
                 <integer>50</integer>
                 <key>KeySubsequentDelay</key>
