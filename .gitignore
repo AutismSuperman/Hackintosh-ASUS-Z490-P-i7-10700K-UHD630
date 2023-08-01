@@ -1,5 +1,4 @@
-.DS_Store 
-*/.DS_Store
 .idea/
-*.contentFlavour
+.DS_Store
+*/.DS_Store
 !/EFI/OC/oldConfig.plist
